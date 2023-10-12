@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Admin - Add New Therapist</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        label, input, select, textarea {
+            display: block;
+            width: 300px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Add New Therapist</h1>
+
+<form action="/path/to/backend/endpoint" method="post" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="specialization">Specialization:</label>
+    <select id="specialization" name="specialization">
+        <option value="massage">Massage</option>
+        <option value="facial">Facial</option>
+        <!-- Add more options as needed -->
+    </select>
+
+    <label for="hours">Available Hours:</label>
+    <input type="text" id="hours" name="hours" placeholder="E.g., 9:00 AM - 5:00 PM">
+
+    <label for="bio">Bio (Optional):</label>
+    <textarea id="bio" name="bio" rows="4" cols="38"></textarea>
+
+    <label for="photo1">Photo 1:</label>
+    <input type="file" id="photo1" name="photo1">
+
+    <label for="photo2">Photo 2:</label>
+    <input type="file" id="photo2" name="photo2">
+
+    <label for="photo3">Photo 3:</label>
+    <input type="file" id="photo3" name="photo3">
+
+    <button type="submit">Add Therapist</button>
+</form>
+
+</body>
+</html>
